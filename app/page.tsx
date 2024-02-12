@@ -8,9 +8,6 @@ import React from 'react'
 const page = () => {
   return (
     <div>
-      {/* <div className="">
-        <Navbar />
-      </div> */}
       <div className="h-36 w-full bg-[#151515] flex items-center justify-start">
             <div className='h-fit my-auto  w-fit mx-20'>
                 <Logo />
