@@ -4,6 +4,7 @@ import NewsTicker from '@/components/NewsTicker'
 import Logo from '@/components/navbar/Logo'
 import React from 'react'
 import MobileNavbar from '@/components/navbar/MobileNavbar'
+import About from '@/components/About'
 
 const page = () => {
   return (
@@ -21,8 +22,11 @@ const page = () => {
       <div className="md:hidden">
         <MobileNavbar />
       </div>
-      <NewsTicker />
-      <Home />
+      <div className="bg-black">
+        <NewsTicker />
+        <Home />
+        <About />
+      </div>
     </>
   )
 }
