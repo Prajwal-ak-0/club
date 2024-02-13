@@ -14,8 +14,8 @@ const MenuItem:React.FC<MenuItemProps>=({
             onClick={onClick}
             className="
                 px-6
-                py-3
-                text-[26px]
+                py-2
+                text-xl
                 rounded-md
                 hover:text-[#00F6BC]
                 transition

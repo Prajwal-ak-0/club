@@ -11,9 +11,9 @@ const Logo = () => {
       onClick={()=>router.push('/')}
         src="/logo.png"
         alt="logo"
-        className="block cursor-pointer"
-        height="170"
-        width="170"
+        className="block cursor-pointer md:block"
+        height="160"
+        width="160"
     />
   )
 }

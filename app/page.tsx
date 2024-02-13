@@ -1,24 +1,29 @@
 import Home from '@/components/Home'
-import { NavigationMenuDemo } from '@/components/Nav'
+import { DesktopNavbar } from '@/components/navbar/DesktopNavbar'
 import NewsTicker from '@/components/NewsTicker'
 import Logo from '@/components/navbar/Logo'
-import Navbar from '@/components/navbar/Navbar'
 import React from 'react'
+import MobileNavbar from '@/components/navbar/MobileNavbar'
 
 const page = () => {
   return (
-    <div>
-      <div className="h-36 w-full bg-[#151515] flex items-center justify-start">
-            <div className='h-fit my-auto  w-fit mx-20'>
-                <Logo />
-            </div>
-            <div className="w-1/2 ml-64">
-                <NavigationMenuDemo />
-            </div>
+    <>
+      <div className='max-md:hidden'>
+        <div className="h-36 w-full bg-[#151515] flex items-center">
+          <div className='h-fit my-auto  w-fit lg:mx-20 md:mx-6'>
+            <Logo />
+          </div>
+          <div className="w-1/2 ml-28">
+            <DesktopNavbar />
+          </div>
         </div>
+      </div>
+      <div className="md:hidden">
+        <MobileNavbar />
+      </div>
       <NewsTicker />
       <Home />
-    </div>
+    </>
   )
 }
 
