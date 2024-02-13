@@ -5,6 +5,7 @@ import Logo from '@/components/navbar/Logo'
 import React from 'react'
 import MobileNavbar from '@/components/navbar/MobileNavbar'
 import About from '@/components/About'
+import Contact from '@/components/Contact'
 
 const page = () => {
   return (
@@ -26,6 +27,7 @@ const page = () => {
         <NewsTicker />
         <Home />
         <About />
+        <Contact/>
       </div>
     </>
   )

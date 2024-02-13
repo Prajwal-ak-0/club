@@ -57,6 +57,7 @@ const MobileNavbar = () => {
                     onClick={toggleOpen}
                     className="
                         p-[12px]
+                        mr-2
                         z-50
                         border-[1px] 
                         border-black
@@ -88,8 +89,8 @@ const MobileNavbar = () => {
             {isOpen && (
                 <div
                     className="
-                    fixed
-                    z-50
+                        fixed
+                        z-50
                         shadow-md
                         w-full
                         bg-black
