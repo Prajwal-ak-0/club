@@ -4,8 +4,9 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import Heading from './Heading';
 import { Button } from './ui/button';
+import Image from 'next/image';
 
-const Contact = () => {
+const Activities = () => {
     const [isHovered, setIsHovered] = useState(false);
 
     return (
@@ -13,14 +14,15 @@ const Contact = () => {
             <div
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
-                className="relative max-md:hidden min-h-screen bg-black"
+                className="relative max-md:hidden min-h-screen md:mt-10 bg-black"
             >
-                <div className="absolute right-0 top-0 h-full w-1/2 bg-cover" style={{ backgroundImage: 'url(bg3.png)' }}></div>
-                <div className="relative w-1/2 z-10 text-white md:p-10 p-6">
+                <div className="absolute left-0 top-0 h-full w-1/2 bg-cover" style={{ backgroundImage: 'url(bg4.png)' }}></div>
+                <div className="absolute flex flex-row-reverse w-1/2 z-10 text-white md:p-10 p-6 right-0 justify-end">
                     <div className="mt-12 flex items-center justify-center md:gap-y-12 gap-y-8 md:mx-16 flex-col">
-                        <Heading title="Magazines & Newsletter" />
-                        <p className={`md:text-3xl text-xl font-sans font-normal text-left md:leading-10 ${isHovered ? 'block' : 'hidden'}`}>
-                            Dive into the cutting edge of technology with in-depth articles, expert insights and ground breaking discoveries in AI/ML.</p>
+                        <Heading title="Activities & Events" />
+                        <p className={`md:text-3xl text-xl font-sans font-normal text-left md:leading-10 ${isHovered ? 'block' : 'hidden'}`} >
+                            Discover a diverse range of learning opportunities, networking sessions and hands-on experiences in AI/ML.
+                        </p>
                         <motion.div
                             initial={{ y: 0 }}
                             animate={{ y: isHovered ? 30 : 0 }}
@@ -34,19 +36,27 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
+
             <div
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
                 className="relative min-h-screen md:hidden bg-black"
             >
-                <div className="absolute left-0 top-0 h-full w-full bg-cover opacity-50" style={{ backgroundImage: 'url(bg3.png)' }}>
-
+                <div className="absolute left-0 h-full w-full top-0 opacity-40" >
+                    <Image
+                        src="/bg4.png"
+                        layout="fill"
+                        objectFit="cover"
+                        objectPosition="center"
+                        alt="bg4"
+                    />
                 </div>
-                <div className="relative w-3/4 z-10 text-white md:p-10 py-6 pt-28 pl- pr-4">
-                    <div className="mt-12 flex items-center ml-2 justify-center md:gap-y-12 gap-y-12 md:mx-16 flex-col">
-                        <Heading title="Magazines & Newsletter" />
-                        <p className={`md:text-3xl text-xl font-sans font-normal text-left md:leading-10 ${isHovered ? 'block' : 'hidden'}`}>
-                            Discover a diverse range of learning opportunities, networking sessions and hands-on experiences</p>
+                <div className="absolute bg-transparent right-0 w-1/2 z-10 text-white md:p-10 py-6 pt-20 pr-1">
+                    <div className="mt-12 flex items-center ml-6 justify-center md:gap-y-12 gap-y-10 md:mx-16 flex-col">
+                        <Heading center title="Activities & Events" />
+                        <p className={`md:text-3xl text-center text-xl font-sans font-normal md:leading-10 ${isHovered ? 'block' : 'hidden'}`}>
+                            Discover a diverse range of learning opportunities, networking sessions and hands-on experiences in AI/ML.
+                        </p>
                         <motion.div
                             initial={{ y: 0 }}
                             animate={{ y: isHovered ? 30 : 0 }}
@@ -64,4 +74,4 @@ const Contact = () => {
     );
 };
 
-export default Contact;
+export default Activities;

@@ -6,6 +6,8 @@ import React from 'react'
 import MobileNavbar from '@/components/navbar/MobileNavbar'
 import About from '@/components/About'
 import Contact from '@/components/Contact'
+import Activities from '@/components/Activities'
+import Footer from '@/components/Footer'
 
 const page = () => {
   return (
@@ -28,6 +30,8 @@ const page = () => {
         <Home />
         <About />
         <Contact/>
+        <Activities/>
+        <Footer/>
       </div>
     </>
   )
