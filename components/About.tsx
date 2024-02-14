@@ -15,7 +15,7 @@ const About = () => {
       onMouseLeave={() => setIsHovered(false)}
     >
       <div
-        className="absolute left-0 top-0 h-full md:w-3/4 w-full bg-cover opacity-40"
+        className="absolute left-0 top-0 h-full md:w-3/4 w-full bg-cover opacity-80 md:opacity-40"
         style={{ backgroundImage: 'url(bg2.gif)' }}
       ></div>
       <div className="relative z-10 text-white md:p-10 p-6">

@@ -42,7 +42,7 @@ const Activities = () => {
                 onMouseLeave={() => setIsHovered(false)}
                 className="relative min-h-screen md:hidden bg-black"
             >
-                <div className="absolute left-0 h-full w-full top-0 opacity-40" >
+                <div className="absolute left-0 h-full w-full top-0 opacity-80" >
                     <Image
                         src="/bg4.png"
                         layout="fill"

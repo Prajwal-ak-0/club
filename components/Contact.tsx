@@ -40,7 +40,7 @@ const Contact = () => {
                 onMouseLeave={() => setIsHovered(false)}
                 className="relative min-h-screen md:hidden bg-black"
             >
-                <div className="absolute left-0 top-0 h-full w-full bg-cover opacity-50" style={{ backgroundImage: 'url(bg3.png)' }}>
+                <div className="absolute left-0 top-0 h-full w-full bg-cover opacity-80 md:opacity-40" style={{ backgroundImage: 'url(bg3.png)' }}>
 
                 </div>
                 <div className="relative w-3/4 z-10 text-white md:p-10 py-6 pt-28 pl- pr-4">

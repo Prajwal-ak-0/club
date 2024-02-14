@@ -6,7 +6,7 @@ export default function Home() {
     <div className="relative  w-full h-screen">
       <Image
         src="/background.gif"
-        className="absolute inset-0 bg-slate-800 opacity-40 z-0"
+        className="absolute inset-0 bg-slate-800 md:opacity-40 opacity-80 z-0"
         alt="Background"
         layout="fill"
         objectFit="cover"
