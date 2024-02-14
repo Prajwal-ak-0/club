@@ -18,7 +18,7 @@ const Subscribe = () => {
   }, [ words.length])
 
   return (
-    <div className='relative md:w-screen md:h-screen w-full h-auto'>
+    <div className='relative md:w-screen h-[50vh]  md:h-screen w-full'>
         <Image
             src="/bg.png"
             layout="fill"
@@ -27,13 +27,13 @@ const Subscribe = () => {
             alt="bg5"
             className="absolute z-0"
         />
-        <div className="absolute z-10 flex flex-col md:mx-40 mt-44 gap-y-4">
-            <h1 className='text-7xl text-white font-bold'>
+        <div className="absolute z-10 flex flex-col md:mx-40 mx-8 md:mt-44 mt-16 gap-y-4">
+            <h1 className='md:text-7xl text-4xl text-white font-bold'>
                 Subscribe to our
             </h1>
             <motion.div >
                     <motion.h2
-                        className='text-7xl text-[#00F6BC] font-bold'
+                        className='md:text-7xl text-4xl text-[#00F6BC] font-bold'
                         key={index}
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}

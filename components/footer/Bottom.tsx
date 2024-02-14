@@ -4,7 +4,7 @@ import { AiOutlineInstagram, AiOutlineTwitter, AiOutlineYoutube } from 'react-ic
 
 const Bottom = () => {
   return (
-    <div className='h-[40vh] w-full bg-black items-center justify-center px-auto mx-auto gap-x-6  py-20 flex'>
+    <div className='md:h-[40vh] w-full bg-black items-center justify-center px-auto mx-auto gap-x-6  md:py-20 py-16 flex'>
         <Image
             src='/clg_logo.png'
             alt='bottom'
@@ -12,7 +12,7 @@ const Bottom = () => {
             height={100}
         />
         <div className="flex flex-col">
-            <h1 className='text-4xl font-semibold text-white'>
+            <h1 className='md:text-4xl text-xl font-medium text-white'>
                 Join our Community
             </h1>
             <div className="flex justify-around text-white">

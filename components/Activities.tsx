@@ -16,9 +16,17 @@ const Activities = () => {
                 onMouseLeave={() => setIsHovered(false)}
                 className="relative max-md:hidden min-h-screen md:mt-10 bg-black"
             >
-                <div className="absolute left-0 top-0 h-full w-1/2 bg-cover" style={{ backgroundImage: 'url(bg4.png)' }}></div>
+                <div className="absolute left-0 top-0 w-1/2 h-full" >
+                    <Image
+                        src="/bg4.png"
+                        layout="fill"
+                        objectFit="cover"
+                        objectPosition="center"
+                        alt="bg4"
+                    />
+                </div>
                 <div className="absolute flex flex-row-reverse w-1/2 z-10 text-white md:p-10 p-6 right-0 justify-end">
-                    <div className="mt-12 flex items-center justify-center md:gap-y-12 gap-y-8 md:mx-16 flex-col">
+                    <div className="flex items-center justify-center md:gap-y-12 gap-y-8 md:mx-16 flex-col">
                         <Heading title="Activities & Events" />
                         <p className={`md:text-3xl text-xl font-sans font-normal text-left md:leading-10 ${isHovered ? 'block' : 'hidden'}`} >
                             Discover a diverse range of learning opportunities, networking sessions and hands-on experiences in AI/ML.
