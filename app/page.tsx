@@ -7,7 +7,8 @@ import MobileNavbar from '@/components/navbar/MobileNavbar'
 import About from '@/components/About'
 import Contact from '@/components/Contact'
 import Activities from '@/components/Activities'
-import Footer from '@/components/Footer'
+import Footer from '@/components/footer/Footer'
+import Bottom from '@/components/footer/Bottom'
 
 const page = () => {
   return (
@@ -29,9 +30,10 @@ const page = () => {
         <NewsTicker />
         <Home />
         <About />
-        <Contact/>
-        <Activities/>
-        <Footer/>
+        <Contact />
+        <Activities />
+        <Footer />
+        <Bottom/>
       </div>
     </>
   )

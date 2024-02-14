@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import Heading from './Heading';
 import { Button } from './ui/button';
 
+
 const Contact = () => {
     const [isHovered, setIsHovered] = useState(false);
 
