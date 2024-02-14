@@ -13,9 +13,8 @@ const Bottom = () => {
                 height={100}
             />            
         </a>
-
         <div className="flex flex-col">
-            <h1 className='text-4xl font-semibold text-white'>
+            <h1 className='md:text-4xl text-xl font-medium text-white'>
                 Join our Community
             </h1>
             <div className="flex justify-around text-white">

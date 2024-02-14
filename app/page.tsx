@@ -32,8 +32,10 @@ const page = () => {
         <About />
         <Contact />
         <Activities />
-        <Footer />
-        <Bottom/>
+        <div className="flex flex-col">
+          <Footer />
+          <Bottom />
+        </div>
       </div>
     </>
   )
