@@ -22,7 +22,7 @@ const About = () => {
         <div className="mt-12 flex items-center justify-center md:gap-y-16 gap-y-8 md:mx-16 flex-col">
           <Heading title="About Us" />
           <p className={`md:text-3xl text-2xl font-sans font-normal text-center md:leading-10 ${isHovered ? 'block' : 'hidden'}`}>
-            Dive into the exciting world of AI/ML and its impact on engineering with the CI Clun! Build &quot;cool stuff&quot; through hands-on projects and explore its potential across various fields. Join us and be part of the future!
+            Dive into the exciting world of AI/ML and its impact on engineering with the CI Club! Build &quot;cool stuff&quot; through hands-on projects and explore its potential across various fields. Join us and be part of the future!
           </p>
           <motion.div
             initial={{ y: 0 }}
