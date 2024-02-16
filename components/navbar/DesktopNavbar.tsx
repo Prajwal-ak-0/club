@@ -64,7 +64,7 @@ export function DesktopNavbar() {
                                     <ListItem
                                         className="w-[400px]"
                                         title="Magazines & Articles"
-                                        href='/magazines-articles'
+                                        href='/resources'
                                     >
 
                                     </ListItem>
@@ -78,7 +78,7 @@ export function DesktopNavbar() {
                                     <ListItem
                                         className="w-[400px]"
                                         title="Activities & Events"
-                                        href='/activities-events'
+                                        href='/events'
                                     >
 
                                     </ListItem>
@@ -86,14 +86,14 @@ export function DesktopNavbar() {
                             </NavigationMenuContent>
                         </NavigationMenuItem>
                         <NavigationMenuItem className=" text-white hover:text-[#00F6BC]">
-                            <Link href="/about" legacyBehavior passHref>
+                            <Link href="/about-us" legacyBehavior passHref>
                                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                                     About Us
                                 </NavigationMenuLink>
                             </Link>
                         </NavigationMenuItem>
                         <NavigationMenuItem className=" text-white hover:text-[#00F6BC]">
-                            <Link href="/support" legacyBehavior passHref>
+                            <Link href="/contact-us" legacyBehavior passHref>
                                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                                     Support
                                 </NavigationMenuLink>

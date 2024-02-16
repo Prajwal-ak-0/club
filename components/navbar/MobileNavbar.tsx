@@ -6,36 +6,36 @@ import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import MenuItem from "./MenuItem";
 import { useRouter } from "next/navigation";
 
-const navitems = [
-    {
-        label: 'About Us',
-        onClick: () => {
-            console.log('About Us');
-        },
-    },
-    {
-        label: 'Resources',
-        onClick: () => {
-            console.log('Resources');
-        },
-    },
-    {
-        label: 'What\'s on',
-        onClick: () => {
-            console.log('What\'s on');
-        },
-    },
-    {
-        label: 'Support',
-        onClick: () => {
-            console.log('Support');
-        },
-    }
-];
-
 const MobileNavbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const router = useRouter();
+
+    const navitems = [
+        {
+            label: 'About Us',
+            onClick: () => {
+                router.push('/about-us');
+            },
+        },
+        {
+            label: 'Resources',
+            onClick: () => {
+                router.push('/resources');
+            },
+        },
+        {
+            label: 'What\'s on',
+            onClick: () => {
+                router.push('/events')
+            },
+        },
+        {
+            label: 'Support',
+            onClick: () => {
+                router.push('/contact-us');
+            },
+        }
+    ];
 
     const toggleOpen = useCallback(() => {
         setIsOpen((value) => !value);
@@ -43,7 +43,7 @@ const MobileNavbar = () => {
 
     return (
         <>
-            <div className="h-20  bg-[#151515] flex items-center justify-between">
+            <div className={`h-20 bg-[#151515] flex items-center justify-between ${isOpen ? 'fixed top-0 w-full z-50' : ''}`}>
                 <div className="mx-4">
                     <Image
                         src="/logo.png"
