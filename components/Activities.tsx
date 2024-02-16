@@ -28,7 +28,7 @@ const Activities = () => {
                 <div className="absolute flex flex-row-reverse w-1/2 z-10 text-white md:p-10 p-6 right-0 justify-end">
                     <div className="flex items-center justify-center md:gap-y-12 gap-y-8 md:mx-16 flex-col">
                         <Heading title="Activities & Events" />
-                        <p className={`md:text-3xl text-xl font-sans font-normal text-left md:leading-10 ${isHovered ? 'block' : 'hidden'}`} >
+                        <p className={`md:text-3xl text-xl font-sans font-normal text-right md:leading-10 ${isHovered ? 'block' : 'hidden'}`} >
                             Discover a diverse range of learning opportunities, networking sessions and hands-on experiences in AI/ML.
                         </p>
                         <motion.div
