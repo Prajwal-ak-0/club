@@ -49,7 +49,7 @@ const ContactForm = () => {
     }
     return (
         <>
-            <div className="flex flex-col bg-neutral-50/50 p-12 rounded-md shadow-md">
+            <div className="flex flex-col bg-neutral-50/50 md:p-12 p-12 rounded-md shadow-md">
                 <Heading title="Contact Us" />
                 <Form {...form}>
                     <form onSubmit={form.handleSubmit(onSubmit)} className="">
