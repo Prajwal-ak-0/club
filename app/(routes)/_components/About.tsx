@@ -44,7 +44,7 @@ const About = () => {
           />
         </div>
         <div className="relative z-10 text-white md:p-10 p-6">
-          <div className="mt-12 flex px-4 md:mx-16 flex-col">
+          <div className="mt-12 flex md:px-4  md:mx-16 flex-col">
             <Heading center title="About Us" />
             <h1 className='md:text-4xl text-xl font-bold md:pb-4 pb-2 md:mt-16 mt-6'>
               What is AI/ML?
