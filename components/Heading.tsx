@@ -18,7 +18,7 @@ const Heading: React.FC<HeadingProps> = ({
 }) => {
     return (
         <div className='flex items-center justify-center flex-col'>
-            <h1 className={cn('md:text-4xl text-3xl md:font-bold font-medium', center && 'text-center', right && 'text-right', left && 'text-left')}>
+            <h1 className={cn('md:text-5xl text-3xl md:font-bold font-medium', center && 'text-center', right && 'text-right', left && 'text-left')}>
                 {title}
             </h1>
             {subtitle && 
