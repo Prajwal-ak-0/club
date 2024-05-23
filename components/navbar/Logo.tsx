@@ -12,8 +12,8 @@ const Logo = () => {
         src="/logo.png"
         alt="logo"
         className="block cursor-pointer md:block"
-        height="160"
-        width="160"
+        height="125"
+        width="125"
     />
   )
 }

@@ -55,7 +55,7 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function DesktopNavbar() {
     return (
-        <NavigationMenu className="bg-[#151515] lg:text-2xl md:text-lg">
+        <NavigationMenu className="bg-[#151515] lg:text-xl md:text-lg">
                     <NavigationMenuList>
                         <NavigationMenuItem className=" text-white hover:text-[#00F6BC]">
                             <NavigationMenuTrigger>Resources</NavigationMenuTrigger>
@@ -93,9 +93,8 @@ export function DesktopNavbar() {
                             </Link>
                         </NavigationMenuItem>
                         <NavigationMenuItem className=" text-white hover:text-[#00F6BC]">
-                            <Link href="/contact-us" legacyBehavior passHref>
-                                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                                    Support
+<Link href="https://docs.google.com/forms/d/e/1FAIpQLScha33NmqquIUcfRWT2pElM4E4L_tecYcEENuJusDmjmz3PCg/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">                                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                                    Register
                                 </NavigationMenuLink>
                             </Link>
                         </NavigationMenuItem>
@@ -111,10 +110,11 @@ const ListItem = React.forwardRef<
     return (
         <li>
             <NavigationMenuLink asChild>
-                <a
+                <Link
+                    href="#"
                     ref={ref}
                     className={cn(
-                        "block space-y-1 w-full rounded-md p-3  no-underline outline-none ",
+                        "block space-y-1 w-full rounded-md  no-underline outline-none ",
                         className
                     )}
                     {...props}
@@ -123,7 +123,7 @@ const ListItem = React.forwardRef<
                     <p className=" text-xl ">
                         {children}
                     </p>
-                </a>
+                </Link>
             </NavigationMenuLink>
         </li>
     )

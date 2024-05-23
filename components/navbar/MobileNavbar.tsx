@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image"
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import MenuItem from "./MenuItem";
 import { useRouter } from "next/navigation";
@@ -9,6 +9,11 @@ import { useRouter } from "next/navigation";
 const MobileNavbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const router = useRouter();
+    const [isClient, setIsClient] = useState(false);
+
+    useEffect(() => {
+        setIsClient(true);
+    }, []);
 
     const navitems = [
         {
@@ -30,9 +35,9 @@ const MobileNavbar = () => {
             },
         },
         {
-            label: 'Support',
+            label: 'Register',
             onClick: () => {
-                router.push('/contact-us');
+                router.push('https://docs.google.com/forms/d/e/1FAIpQLScha33NmqquIUcfRWT2pElM4E4L_tecYcEENuJusDmjmz3PCg/viewform?usp=sf_link');
             },
         }
     ];
@@ -40,6 +45,8 @@ const MobileNavbar = () => {
     const toggleOpen = useCallback(() => {
         setIsOpen((value) => !value);
     }, []);
+
+    if(!isClient) return null;
 
     return (
         <>
